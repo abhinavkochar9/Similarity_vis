@@ -19,7 +19,7 @@ st.title("Similarity Graphs Viewer")
 #     Exercise1/
 #       similarity_individual.html
 #       similarity_average.html
-BASE_DIR = "Similarity_DB_HTML"
+BASE_DIR = os.path.join(current_dir, "Similarity_DB_HTML")
 
 if not os.path.exists(BASE_DIR):
     st.error("The base directory does not exist. Please check the path in BASE_DIR.")
