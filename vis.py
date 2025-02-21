@@ -19,6 +19,7 @@ st.title("Similarity Graphs Viewer")
 #     Exercise1/
 #       similarity_individual.html
 #       similarity_average.html
+current_dir = os.path.dirname(__file__)
 BASE_DIR = os.path.join(current_dir, "Similarity_DB_HTML")
 
 if not os.path.exists(BASE_DIR):
