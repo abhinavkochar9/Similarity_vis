@@ -21,6 +21,8 @@ st.title("Similarity Graphs Viewer")
 #       similarity_average.html
 current_dir = os.path.dirname(__file__)
 BASE_DIR = os.path.join(current_dir, "..", "Similarity_DB_HTML")
+if not os.path.exists(BASE_DIR):
+    raise FileNotFoundError(f"The base directory does not exist. Please check the path: {BASE_DIR}")
 
 if not os.path.exists(BASE_DIR):
     st.error("The base directory does not exist. Please check the path in BASE_DIR.")
